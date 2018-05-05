@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>toUpperCase和toLowerCase</title>
+</head>
+<body>
+<script>
+    var str="Never deter till tomorrow that which you can do today";
+	var index=str.indexOf("tomorrow");//补充代码
+	var strNew=str.substr(index,8);//补充代码
+	var str1=str.substring(0,index);
+	var str2=str.substr(index+8);
+	var upperStr=str1+strNew.toUpperCase()+str2;//补充代码
+    document.write(upperStr);
+</script>
+</body>
+</html>

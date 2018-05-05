@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>员工合同到期时间</title>
+</head>
+<body>
+<script>
+    var joinYear=parseInt(prompt("请输入员工的入职年份"));
+    var joinMonth=parseInt(prompt("请输入员工的入职月份"));
+    var joinDay=parseInt(prompt("请输入员工入职时间"));
+    document.write("该员工入职时间是："+joinYear+'-'+joinMonth+'-'+joinDay+"<br/>");
+    function getFunction(joinYear,joinMonth,joinDay){
+        var temp=new Date(joinYear+3,joinMonth-1,joinDay);
+        var newYear=temp.getFullYear();
+        var newMonth=temp.getMonth()+1;
+        var newDay=temp.getDate();
+        document.write("该员工合同到期时间是："+newYear+"-"+newMonth+"-"+newDay);
+    }getFunction(joinYear,joinMonth,joinDay);
+    //代码补充
+</script>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>信息录入</title>
+</head>
+<body>
+    <input type="button" value="录入" >
+    <script type="text/javascript">
+	    var inputs=document.getElementsByTagName("input");
+	    var entry=inputs[0];
+		function entryFn(){
+    		var user=prompt("请输入员工姓名："),
+        		users=[];
+    		for(var i=0;user!=-1;i++){
+        		users[i]=user;
+        		var user=prompt("请输入员工姓名：");  
+    		}
+    		for(var m=0;m<users.length;m++){
+        		document.write("录入的第"+(m+1)+"个员工信息是："+users[m]+"<br/>")
+    		}
+		}
+	entry.onclick=entryFn;
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> </title>
+</head>
+<body>
+<script>
+    // 获取邮箱地址
+    var url=prompt("请输入登录邮箱");
+    function getEmailFormat(){
+        // 获取@在url中出现的位置
+        var pos=url.lastIndexOf("@");
+        var pos1=url.substring(0,pos);
+        var pos2=url.substr(pos+1);
+        document.write("邮箱的用户名是："+pos1+"<br/>");
+        document.write("登录的邮箱域名是："+pos2+"邮箱");
+    }getEmailFormat();
+</script>
+</body>
+</html>

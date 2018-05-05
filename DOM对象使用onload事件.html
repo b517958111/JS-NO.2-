@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+	    <meta charset="UTF-8">
+	    <title>onload</title>
+	    <script type="text/javascript">
+	    window.onload=function(){
+	        var btn=document.getElementsByTagName("input");
+	        var clicked=function(){
+	        	this.style.color="red";
+	        }
+	        btn[0].onclick=clicked;
+	        var mouseOut=function(){
+	        	this.style.color="blue";
+	        }
+	        btn[0].onmouseout=mouseOut;
+	    }
+	    </script>
+	</head>
+	<body>
+		<input type="button" value="点击改变按钮字体颜色" >
+	</body>
+</html>

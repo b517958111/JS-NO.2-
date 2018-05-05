@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>全选和反选</title>
+</head>
+<body>
+    <input type="button" id="btn" value="全选">
+	<script type="text/javascript">
+		var btn=document.getElementById("btn");
+		// 第一种办法
+		function cg(){
+			if(this.getAttribute("value") =="全选"){
+				this.setAttribute("value","反选");
+			}
+			else{
+				this.setAttribute("value","全选");
+			}
+		}
+		btn.onclick=cg;
+		// 第二种办法
+		btn.onclick=function(){
+			if(this.getAttribute("value") =="全选"){
+				this.setAttribute("value","反选");
+			}
+			else{
+				this.setAttribute("value","全选");
+			}
+		}
+	</script>
+</body>
+</html>
+

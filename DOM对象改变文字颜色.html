@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML事件</title>
+</head>
+<body>
+
+   <input type="button" value="开始" onmouseover="mouseoverFn(this,'purple')" onmouseout="mousrovrtFn(this,'grey')">
+
+   <input type="button" value="结束" onmouseover="mouseoverFn(this,'yellow')" onmouseout="mouseoverFn(this,'grey')">
+
+<script type="text/javascript">
+
+    function mouseoverFn(input,fontColor){
+
+        input.style.color=fontColor;
+
+    }
+
+</script>
+
+</body>
+
+</html>
